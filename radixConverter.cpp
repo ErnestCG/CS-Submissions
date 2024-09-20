@@ -171,18 +171,4 @@ int main()
     std::cout << "Program terminated by user.";
     return 0;
 }
-
-// Get user input (origin base, number)
-// Probably use dictionary and switch cases for input to decimal conversion
-    //if base == 2...10 -> division method
-    //else make new code for conversion with letters
-// Convert decimal to bases 2-16
-// Output converted values
-
-//Things to add:
-//Better input checking for base system (within 2 to 16) and input number (0 to 9, A to F || a to f)
-//base system and input number comparison to check if correct base system is inputted
-    //base 2 should only contain 0,1
-    //base 3...4...5
-    //base 11 upward should contain the appropriate letters
     //bunch of iterations over string elements checking for character validity
