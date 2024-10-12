@@ -125,7 +125,7 @@ char validOperator(){
     std::cin >> op;
     bool isIn = validOperators.find(op) != std::string::npos;
     if (!isIn) {
-        std::cout << "This is not a valid number" << std::endl;
+        std::cout << "Unidentified operator, please try again." << std::endl;
         return validOperator();
     }
     return op;
@@ -172,6 +172,7 @@ int main()
                 break;
             }
             radResult = toRadix(decResult, baseInput);
+            std::cout << "Resutlt: ";
             for (int x = radResult.size() - 1; x >= 0; --x) { //Prints out the values in the vector in reverse
                 std::cout << radResult[x];
             }
@@ -192,6 +193,7 @@ int main()
                 decResult = decHolder1 / decHolder2;
                 break;
             }
+            std::cout << "Resutlt: ";
             std::cout << decResult << std::endl;
         }
         std::cout << "Enter \"STOP\" to terminate the program, if you wish to continue enter anything else."
